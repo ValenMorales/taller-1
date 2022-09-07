@@ -5,6 +5,11 @@ class Soluciones:
         self.productos_lacteos =[ ]
         self.productos_aseos= [ ]
         self.granos = [ ]
-    
+    #punto 2
+        self.existencia_lacteos = [ ]
+        self.existencia_aseos = [ ]
+        self.existencia_granos = [ ]
+        
+
 
 
