@@ -9,10 +9,7 @@ class Soluciones:
         self.existencia_aseos = [ ]
         self.existencia_granos = [ ]
     #punto 3
-    #El sistema debe permitir ingresar el nombre
-    #  del producto y el número de los mismos,  
-    #ademas de la categoría a la que pertenecen.
-
+    
     def agregar_producto(self, existencia, num_categoria):
         nombre_producto= input('ingresa el nombre del producto ')
         if nombre_producto in globals():
@@ -26,7 +23,7 @@ class Soluciones:
             cantidad_producto= int(input('cuanta cantidad hay de este producto?'))
             existencia.append((nombre_producto, cantidad_producto))
 
-
+'''
     def añadir_producto(self):
         while True:
             try:
@@ -57,6 +54,6 @@ class Soluciones:
         
 
 
-
+'''
 
 
