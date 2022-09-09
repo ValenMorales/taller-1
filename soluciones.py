@@ -1,3 +1,6 @@
+from datetime import MAXYEAR
+
+
 class Soluciones:
     #crear metodo inicializador de la clase
     def __init__(self):
@@ -9,21 +12,23 @@ class Soluciones:
         self.existencia_aseos = [ ]
         self.existencia_granos = [ ]
     #punto 3
-    
+
     def agregar_producto(self, existencia, num_categoria):
         nombre_producto= input('ingresa el nombre del producto ')
-        if nombre_producto in globals():
+        if existencia.__contains__(nombre_producto):
             print('ya existe')
-            cantidad_producto= int(input('cuanta cantidad hay de este producto?'))
+            cantidad_producto= int(input('cuanta cantidad va a agregar?'))
             for item in existencia:
                 if item[0]==nombre_producto:
                     item[1]=int(item[1])+cantidad_producto
-        else:  
+                    print(existencia)
+        else:
+            print('mya')
             self.listaProductos.append((self.categorias[num_categoria], nombre_producto))
             cantidad_producto= int(input('cuanta cantidad hay de este producto?'))
             existencia.append((nombre_producto, cantidad_producto))
+            
 
-'''
     def añadir_producto(self):
         while True:
             try:
@@ -52,8 +57,5 @@ class Soluciones:
     
 
         
-
-
-'''
 
 
